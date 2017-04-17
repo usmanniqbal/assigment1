@@ -1,0 +1,34 @@
+<div class="animated fadeIn">
+    <div class="row">
+        <!--/.col-->
+        <div class="col-md-12 mb-2">
+            <!-- Nav tabs -->
+            <tabset>
+                <tab>
+                    <template tabHeading><i class="icon-calculator"></i> Calculator </template>
+                    2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.
+                    <br>
+                    
+                </tab>
+                <tab *ngFor='let content of contents' >
+                    <template tabHeading ><i class="icon-basket-loaded">{{content.title}}</i></template>
+                    {{content.text}}
+                    <br>
+                     <button class="btn btn-warning" (click)="removeTab(content)">Remove</button>   
+                    </tab>
+                <!--<tab>
+                    <template tabHeading><i class="icon-pie-chart"></i> Charts</template>
+                    4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </tab>-->
+            </tabset>
+            <br>
+            <button class="btn btn-primary" (click)="addTab()">Add Tab</button>
+        </div>
+    </div>
+    <!--/.row-->
+</div>

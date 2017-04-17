@@ -1,0 +1,10 @@
+.btn-outline-black {
+       color: white;
+       background-color: #304047;
+       border-color: #304047;
+   }
+
+       .btn-outline-black:hover {
+           color: white;
+           background-color: black;
+       }

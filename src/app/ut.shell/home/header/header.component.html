@@ -1,0 +1,36 @@
+<header class="app-header navbar">
+    <button class="navbar-toggler mobile-sidebar-toggler hidden-lg-up" type="button">&#9776;</button>
+    <a class="navbar-brand" href="#"></a>
+    <ul class="nav navbar-nav hidden-md-down">
+        <li class="nav-item">
+            <a class="nav-link navbar-toggler sidebar-toggler" href="#">&#9776;</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+        <li class="nav-item dropdown" dropdown (onToggle)="toggled($event)">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"
+                dropdownToggle>
+                <img src="assets/img/favicon.png" class="img-avatar" alt="admin@bootstrapmaster.com">
+                <span class="hidden-md-down">admin</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" dropdownMenu aria-labelledby="simple-dropdown">
+                <div class="dropdown-header text-xs-center">
+                    <strong>Account</strong>
+                </div>
+                <a class="dropdown-item" href="#" (click)="logout()"><i class="fa fa-sign-out"></i>  Logout</a>
+            </div>
+        </li>
+    </ul>
+</header>
+
+<div class="app-body">
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" [routerLink]="['user']"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-info">NEW</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

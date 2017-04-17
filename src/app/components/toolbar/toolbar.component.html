@@ -1,0 +1,12 @@
+<nav class="navbar-light ">
+  <div class="btn-toolbar ">
+    <button class="btn btn-secondary fa fa-plus" (click)="toolbarEvent.boardcast('clear')"></button>
+    <button class="btn btn-secondary fa fa-save" (click)="toolbarEvent.boardcast('save')"></button>
+    <button class="btn btn-secondary fa fa-trash" (click)="toolbarEvent.boardcast('delete')"></button>
+
+    <button class="btn btn-secondary fa fa-arrow-left" (click)="toolbarEvent.boardcast('first')"></button>
+    <button class="btn btn-secondary fa fa-arrow-left" (click)="toolbarEvent.boardcast('previous')"></button>
+    <button class="btn btn-secondary fa fa-arrow-right" (click)="toolbarEvent.boardcast('next')"></button>
+    <button class="btn btn-secondary fa fa-arrow-right" (click)="toolbarEvent.boardcast('last')"></button>
+  </div>
+</nav>

@@ -1,0 +1,73 @@
+.login-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background: #222;
+    text-align: center;
+    color: #fff;
+    padding: 3em
+}
+
+.login-page .input-underline {
+    background: 0 0;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid hsla(0, 0%, 100%, .5);
+    color: #fff;
+    border-radius: 0
+}
+
+.login-page .input-underline:focus {
+    border-bottom: 2px solid #fff;
+    box-shadow: none
+}
+
+.login-page .rounded-btn {
+    border-radius: 50px;
+    color: hsla(0, 0%, 100%, .8);
+    background: #222;
+    border: 2px solid hsla(0, 0%, 100%, .8);
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0 25px
+}
+
+.login-page .rounded-btn:active, .login-page .rounded-btn:focus, .login-page .rounded-btn:hover, .login-page .rounded-btn:visited {
+    color: #fff;
+    border: 2px solid #fff;
+    outline: 0
+}
+
+.login-page h1 {
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px
+}
+
+.login-page h1 small {
+    color: hsla(0, 0%, 100%, .7)
+}
+
+.login-page .form-group {
+    padding: 8px 0
+}
+
+.login-page .form-group input::-webkit-input-placeholder {
+    color: hsla(0, 0%, 100%, .6)!important
+}
+
+.login-page .form-group input:-moz-placeholder, .login-page .form-group input::-moz-placeholder {
+    color: hsla(0, 0%, 100%, .6)!important
+}
+
+.login-page .form-group input:-ms-input-placeholder {
+    color: hsla(0, 0%, 100%, .6)!important
+}
+
+.login-page .form-content {
+    padding: 40px 0
+}

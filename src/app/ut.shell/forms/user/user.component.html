@@ -1,0 +1,31 @@
+<my-toolbar></my-toolbar>
+<form name="form" #form="ngForm">
+    <div class="animated fadeIn">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <strong>Form</strong>
+                    </div>
+                    <div class="card-block">
+                        <form action="" class="form-horizontal " enctype="multipart/form-data" method="post">
+
+                            <my-textbox label="Username:" name="username" [(value)]="model.username"></my-textbox>
+                            <my-textbox label="Full Name:" name="fullname" [(value)]="model.fullname"></my-textbox>
+                            <my-textbox label="Email Id:" name="emailid" [(value)]="model.emailid"></my-textbox>
+                            <my-date label="Date of Joining:"></my-date>
+                            <my-time label="Time:"></my-time>
+                            <my-textbox label="Middle Name:"></my-textbox>
+                            <my-textarea label="Description:"></my-textarea>
+                            <my-checkbox label="Checkbox:"></my-checkbox>
+                            <my-radiobutton label="Radio:"></my-radiobutton>
+                            <my-button label="Test"></my-button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--animated fade in-->
+    </div>
+</form>

@@ -1,0 +1,32 @@
+<div class="login-page">
+    <!--Login area-->
+    <div style="margin-top:10%">
+        <div class=" row justify-content-center ">
+            <div class="col-lg-4  col-lg-pull-4 ">
+                <!--<div class="col-lg-4 col-lg-offset-4">-->
+                <img src="assets/img/logo.png" width="150px" class="user-avatar" />
+                <h1>Login</h1>
+                <form name="form" (ngSubmit)="login()" #f="ngForm">
+                    <div class="form-content">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-underline input-lg" name="username" [(ngModel)]="model.username" #username="ngModel"
+                                minlength="5" maxlength="15" placeholder="Username" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control input-underline input-lg" name="password" [(ngModel)]="model.password" #password="ngModel"
+                                minlength="5" maxlength="15" placeholder="Password" required />
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-xs-6 col-lg-6 col-sm-12">
+                                <a href="#" class="row text-muted col-md-0">Forgot your password?</a>
+                            </div>
+                            <div class="col-md-6  col-xs-12 col-lg-6 col-sm-12">
+                                <button class="row btn btn-group-md  rounded-btn  pull-right">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
